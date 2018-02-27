@@ -1,0 +1,19 @@
+
+# ACPP
+This is the code repo for the paper:
+Efficient Approximate Algorithms for the Closest Pair Problem in High Dimensional Spaces
+( accepted in The Pacific-Asia Knowledge Discovery and Data Mining 2018 (PAKDD18)  )
+These approximate algorithms try to identify the closest pair of points in a high dimensional space.
+
+--------------------------------------------
+To use:
+In main.cpp comment out ACPP_D or ACPP_P or MK for different algorithms
+
+To compile:
+g++ -o main main.cpp -lm -O3 -std=c++11
+
+To run:
+./main [file] [num_points] [dimension] [max_ref, default 10 in MK] [verbos] [dummy] [parameter h, default 2] [range value, suggest using 5]
+
+e.g.
+./main [file] 10000 128 10 0 10 2 5
